@@ -1,0 +1,856 @@
+/* Основной стиль сайта начало */
+@import url("https://raw.githubusercontent.com/dragenge/dragenge.github.io/master/cssfiles/main_code_1.css");
+@import url("https://raw.githubusercontent.com/dragenge/dragenge.github.io/master/cssfiles/main_code_2.css");
+@import url("https://raw.githubusercontent.com/dragenge/dragenge.github.io/master/cssfiles/main_code_3.css");
+@import url("https://raw.githubusercontent.com/dragenge/dragenge.github.io/master/cssfiles/main_code_4mob.css");
+@import url("https://raw.githubusercontent.com/dragenge/dragenge.github.io/master/cssfiles/q03_history_bookmarks.css");
+@import url("https://raw.githubusercontent.com/dragenge/dragenge.github.io/master/cssfiles/cosmo-library/q10-01_anime-manga_0.css");
+@import url("https://raw.githubusercontent.com/dragenge/dragenge.github.io/master/cssfiles/cosmo-library/q10-02_person_0.css");
+@import url("https://raw.githubusercontent.com/dragenge/dragenge.github.io/master/cssfiles/cosmo-library/q10-03_person_1.css");
+@import url("https://raw.githubusercontent.com/dragenge/dragenge.github.io/master/cssfiles/cosmo-library/q10-04_quick-access-panel_0.css");
+@import url("https://raw.githubusercontent.com/dragenge/dragenge.github.io/master/cssfiles/cosmo-library/q10-05_slider_0.css");
+@import url("https://raw.githubusercontent.com/dragenge/dragenge.github.io/master/cssfiles/cosmo-library/q10-06_mega-slider_0.css");
+body:after {
+  background-image: url(https://i.imgur.com/r6VnsNR.jpg);
+}
+
+.l-footer:after {
+  content: "*The Wasteland*";
+}
+
+@media screen and (min-width: 1px) {
+  .correct-mob-version {
+    color: normal;
+  }
+}
+
+.shikista {
+  color: white;
+}
+
+@media screen and (min-width: 1px) {
+  html:root {
+    --white-color: 226, 236, 241;
+    --light-color: 30, 144, 255;
+    --dark-color: 30, 144, 255;
+    --bright-color: 30, 144, 255;
+    --dull-color: 97, 109, 111;
+    --input-color: 70, 76, 78;
+    --hover-bottoms-1: 15, 18, 21;
+    --buttoms-color: 28, 33, 39;
+    --hover-buttoms-2: 156, 98, 25;
+    --very-high-rating: 75, 83, 86;
+    --high-rating: 53, 60, 66;
+    --average-rating: 37, 43, 49;
+    --small-rating: 27, 33, 39;
+    --time-filled: 44, 53, 60;
+    --time-empty: 24, 27, 29;
+    --anime-inprocess: 69, 146, 76;
+    --anime-complete: 41, 107, 47;
+    --manga-inprocess: 189, 15, 86;
+    --manga-complete: 153, 0, 62;
+    --hover-color: 99, 167, 12;
+    --shadows-color: 86, 90, 86;
+    --block-color: 1,34,102;
+    --menu-back: 5, 8, 12;
+    --nick-cover: 55, 101, 45;
+    --popup-color: 29, 34, 36;
+    --hundred: 1;
+  }
+}
+
+[data-tab-switch] {
+    font-weight: bold; 
+    position: relative;
+    justify-content: center;
+    margin: 4px 4px;
+    padding: 6px 10px 5px;
+    line-height: 1;
+    box-shadow: 0 2px 6px 2px rgba(var(--block-color), 0.8);
+    border-radius: 13px;
+}
+[data-tab]{
+    border-radius: 13px;
+}
+[active data-tab-switch] {
+    background-color: #012266
+      
+}  
+
+[data-tab-switch].active {
+      color: rgba(var(--dark-color), var(--hundred))!important;
+    cursor: default;
+    background-color: rgba(var(--block-color), 1);
+}
+div.cen {
+     padding-top: 20px;
+}
+/* Основной стиль сайта конец */
+
+/* СМЕНА ОБЛОЖЕК */
+/* Обложки Персонажей */
+/* Общие настройки обложек */
+.b-catalog_entry .cover .image-cutter,
+.b-catalog_entry-tooltip > a,
+.entry-tooltip_container > .image-link {
+  background-size: cover;
+  background-position: top center;
+}
+/* Цукаса Юдзаки */
+[class *= 'b-catalog_entry'] > a[href *= 'characters/163271'] img {
+  visibility: hidden;
+}
+.b-catalog_entry a[href *= 'characters/163271-'] .image-cutter,
+.b-catalog_entry-tooltip > a[href *= 'characters/163271'] {
+  background-image: url(https://moe.shikimori.one/system/user_images/thumbnail/601058/1280067.jpg);
+}
+/* Айла */
+[class *= 'b-catalog_entry'] > a[href *= 'characters/124049'] img {
+  visibility: hidden;
+}
+.b-catalog_entry a[href *= 'characters/124049-'] .image-cutter,
+.b-catalog_entry-tooltip > a[href *= 'characters/124049'] {
+  background-image: url(//moe.shikimori.one/system/user_images/original/601058/1338112.jpg);
+}
+/* Маи Сакурадзима */
+[class *= 'b-catalog_entry'] > a[href *= 'characters/118739'] img {
+  visibility: hidden;
+}
+.b-catalog_entry a[href *= 'characters/118739-'] .image-cutter,
+.b-catalog_entry-tooltip > a[href *= 'characters/118739'] {
+  background-image: url(https://dere.shikimori.one/system/user_images/original/601058/1280074.jpg);
+}
+/* Элейна */
+[class *= 'b-catalog_entry'] > a[href *= 'characters/151335'] img {
+  visibility: hidden;
+}
+.b-catalog_entry a[href *= 'characters/151335'] .image-cutter,
+.b-catalog_entry-tooltip > a[href *= 'characters/151335'] {
+  background-image: url(https://nyaa.shikimori.one/system/user_images/original/601058/1331285.jpg);
+}
+/* Чизуру */
+[class *= 'b-catalog_entry'] > a[href *= 'characters/161286'] img {
+  visibility: hidden;
+}
+.b-catalog_entry a[href *= 'characters/161286'] .image-cutter,
+.b-catalog_entry-tooltip > a[href *= 'characters/161286'] {
+  background-image: url(https://nyaa.shikimori.one/system/user_images/original/601058/1331295.jpg);
+}
+  /* Мисаки Секухо */
+[class *= 'b-catalog_entry'] > a[href *= 'characters/z40136'] img {
+  visibility: hidden;
+}
+.b-catalog_entry a[href *= 'characters/z40136'] .image-cutter,
+.b-catalog_entry-tooltip > a[href *= 'characters/z40136'] {
+  background-image: url(https://dere.shikimori.one/system/user_images/original/601058/1331299.jpg);
+}
+  /* Цукико Цуцукакуши */
+[class *= 'b-catalog_entry'] > a[href *= 'characters/42469'] img {
+  visibility: hidden;
+}
+.b-catalog_entry a[href *= 'characters/42469'] .image-cutter,
+.b-catalog_entry-tooltip > a[href *= 'characters/42469'] {
+  background-image: url(https://desu.shikimori.one/system/user_images/thumbnail/601058/1331308.jpg);
+}
+  /* Мисака Микото */
+[class *= 'b-catalog_entry'] > a[href *= 'characters/-13701'] img {
+  visibility: hidden;
+}
+.b-catalog_entry a[href *= 'characters/-13701'] .image-cutter,
+.b-catalog_entry-tooltip > a[href *= 'characters/-13701'] {
+  background-image: url(https://desu.shikimori.one/system/user_images/original/601058/1331313.jpg);
+}
+  /* Мико Иино */
+[class *= 'b-catalog_entry'] > a[href *= 'characters/152052'] img {
+  visibility: hidden;
+}
+.b-catalog_entry a[href *= 'characters/152052'] .image-cutter,
+.b-catalog_entry-tooltip > a[href *= 'characters/152052'] {
+  background-image: url(https://desu.shikimori.one/system/user_images/original/601058/1331318.jpg);
+}
+  /* Ай Хаясака */
+[class *= 'b-catalog_entry'] > a[href *= 'characters/143196'] img {
+  visibility: hidden;
+}
+.b-catalog_entry a[href *= 'characters/143196'] .image-cutter,
+.b-catalog_entry-tooltip > a[href *= 'characters/143196'] {
+  background-image: url(https://nyaa.shikimori.one/system/user_images/original/601058/1331325.jpg);
+}
+/* Изменение контейнера во всплывающей подсказке */
+.b-catalog_entry-tooltip > a,
+.entry-tooltip_container > .image-link {
+  float: left;
+  width: 160px;
+  height: 249.34px;
+}
+
+  /* Обложки Аниме и манги*/
+  /* Этот глупый свин не понимает мечту девочки зайки */
+@media screen and (min-width: 180px) {
+   .Animes_Mangas .c-anime.entry-37450 .image-cutter::after { 
+        background-image: url("//media1.tenor.com/images/f2086dfcec1fb92b97916e75367eebdd/tenor.gif?itemid=20581348"); 
+}
+  /* Этот глупый свин не понимает мечту девочки зайки: фильм */
+    .Animes_Mangas .c-anime.entry-38329 .image-cutter::after { 
+        background-image: url("//kawai.shikimori.one/system/user_images/original/601058/1336626.jpg");
+}
+  /* Путешествие Элейны */
+    .Animes_Mangas .c-anime.entry-40571 .image-cutter::after { 
+        background-image: url("//media1.tenor.com/images/609cd3e015b134c8f9833a57b5d03f76/tenor.gif?itemid=20581192");
+}
+  /* Унеси меня на луну */
+    .Animes_Mangas .c-anime.entry-41389 .image-cutter::after { 
+        background-image: url("//moe.shikimori.one/system/user_images/original/601058/1337807.jpg");
+}
+  /* Восхождение героя щита */
+    .Animes_Mangas .c-anime.entry-35790 .image-cutter::after { 
+        background-image: url("//media1.tenor.com/images/b11413bc19d5a09c2f32945f962b9021/tenor.gif?itemid=14043105");
+}
+  /* Кошечка из сакурасо */
+    .Animes_Mangas .c-anime.entry-13759 .image-cutter::after { 
+        background-image: url("//media1.tenor.com/images/e6d2beaf18f41b92a7fbbfa555ba54c0/tenor.gif?itemid=19909171");
+}
+  /* Связь принцесс: Повторное погружение */
+    .Animes_Mangas .c-anime.entry-39292 .image-cutter::after { 
+        background-image: url("");
+}
+  /* Пластиковые воспоминания */
+    .Animes_Mangas .c-anime.entry-27775 .image-cutter::after { 
+        background-image: url("//media1.tenor.com/images/004465e7caf3123f7d30b7170b8f70d0/tenor.gif?itemid=12806965");
+}
+  /* Арифурэта: Сильнейший ремесленник в мире */
+    .Animes_Mangas .c-anime.entry-36882 .image-cutter::after { 
+        background-image: url("//media1.tenor.com/images/cec53319bc40f0a377d166ad07192cfb/tenor.gif?itemid=20203422");
+}
+  /* Некий научный Рейлган T */
+    .Animes_Mangas .c-anime.entry-38481 .image-cutter::after { 
+        background-image: url("https://media1.tenor.com/images/2a3f9f53fc0f629b83f849694b804720/tenor.gif?itemid=20580914");
+}
+  /* Связь принцесс: Повторное погружение */
+    .Animes_Mangas .c-anime.entry-39292 .image-cutter::after { 
+        background-image: url("//media1.tenor.com/images/a0e5e55fee069f3272d0668e29190521/tenor.gif?itemid=20581028");
+}
+  /* Ангельские ритмы */
+    .Animes_Mangas .c-anime.entry-6547 .image-cutter::after { 
+        background-image: url("//media1.tenor.com/images/9d79a9b1917dd910a5ffba4e749fa874/tenor.gif?itemid=20581476");
+}
+  /* Последний серафим */
+    .Animes_Mangas .c-anime.entry-26243 .image-cutter::after { 
+        background-image: url("//media1.tenor.com/images/7e097e9633c5dbf801ec7a670d9a7317/tenor.gif?itemid=20581828");
+}
+  /* Шарлотта */
+    .Animes_Mangas .c-anime.entry-28999 .image-cutter::after { 
+        background-image: url("https://media1.tenor.com/images/54a52ca16c3f2f0e39820365d8e62262/tenor.gif?itemid=20582558");
+}
+  
+ /* Обложки персонажей */
+#profiles_show .Razmer-row-3 > .Person-0 .c-column {   /* первый ряд */
+  width: calc(100% / 6) !important;
+}
+/* первый ряд-высота постеров  */
+#profiles_show .Razmer-row-3 > .Person-0 .b-catalog_entry .cover .image-decor .image-cutter { 
+  padding: 0 0 150% 0;
+  
+}  
+ /* Обложки персонажей */
+#profiles_show .Razmer-row-2 > .Person-0 .c-column {   /* первый ряд */
+  width: calc(100% / 6) !important;
+}
+/* первый ряд-высота постеров  */
+#profiles_show .Razmer-row-2 > .Person-0 .b-catalog_entry .cover .image-decor .image-cutter { 
+  padding: 0 0 140% 0;
+}
+  /* Май сакураджима */
+  .Person-0 [id="118739"] .image-cutter::after { 
+  background: url('//dere.shikimori.one/system/user_images/original/601058/1280074.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="118739"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="118739"] .image-decor::after {
+  content: "";
+}
+  /* Ай Хаясака */
+  .Person-0 [id="143196"] .image-cutter::after { 
+  background: url('//nyaa.shikimori.one/system/user_images/original/601058/1331325.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="143196"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="143196"] .image-decor::after {
+  content: " ";
+}
+  /* Чизуру */
+  .Person-0 [id="161286"] .image-cutter::after { 
+  background: url('//nyaa.shikimori.one/system/user_images/original/601058/1331295.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="161286"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="161286"] .image-decor::after {
+  content: "";
+}
+  /* Мисаки Секухо */
+  .Person-0 [id="40136"] .image-cutter::after { 
+  background: url('//dere.shikimori.one/system/user_images/original/601058/1331299.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="40136"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="40136"] .image-decor::after {
+  content: "Не может управлять моим разумом ";
+}
+    /* Мисака Микото */
+  .Person-0 [id="13701"] .image-cutter::after { 
+  background: url('//desu.shikimori.one/system/user_images/original/601058/1331313.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="13701"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="13701"] .image-decor::after {
+  content: "Научная подруга ";
+}
+    /* Мико Иино */
+  .Person-0 [id="152052"] .image-cutter::after { 
+  background: url('//desu.shikimori.one/system/user_images/original/601058/1331318.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="152052"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="152052"] .image-decor::after {
+  content: "Ты все не так поняла ";
+
+}
+    /* Инори Юдзуриха */
+  .Person-0 [id="43280"] .image-cutter::after { 
+  background: url('//moe.shikimori.one/system/user_images/original/601058/1338057.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="43280"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="43280"] .image-decor::after {
+  content: "Пой вечно ";
+
+}
+    /* Холо */
+  .Person-0 [id="7373"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1338106.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="7373"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="7373"] .image-decor::after {
+  content: "Волчица с характером";
+
+}
+    /* Мидори Фусэ */
+  .Person-0 [id="104997"] .image-cutter::after { 
+  background: url('//nyaa.shikimori.one/system/user_images/original/601058/1338110.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="104997"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="104997"] .image-decor::after {
+  content: " ";
+
+}
+    /* Айла */
+  .Person-0 [id="124049"] .image-cutter::after { 
+  background: url('//moe.shikimori.one/system/user_images/original/601058/1338112.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="124049"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="124049"] .image-decor::after {
+  content: " ";
+
+}
+    /* Нацуки Саотоме */
+  .Person-0 [id="171693"] .image-cutter::after { 
+  background: url('//nyaa.shikimori.one/system/user_images/original/601058/1367265.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="171693"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="171693"] .image-decor::after {
+  content: " ";
+}
+    /* Бэнио Адасино */
+  .Person-0 [id="95667"] .image-cutter::after { 
+  background: url('//desu.shikimori.one/system/user_images/original/601058/1367283.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="95667"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="95667"] .image-decor::after {
+  content: " ";
+}
+    /* Юэ(арифурета) */
+  .Person-0 [id="129062"] .image-cutter::after { 
+  background: url('//dere.shikimori.one/system/user_images/original/601058/1368134.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="129062"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="129062"] .image-decor::after {
+  content: "Я вкусный? Спасибо ";
+}
+    /* Хикари Таканаши */
+  .Person-0 [id="144273"] .image-cutter::after { 
+  background: url('//moe.shikimori.one/system/user_images/original/601058/1368142.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="144273"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="144273"] .image-decor::after {
+  content: "";
+}
+    /* Юко Сиондзи */
+  .Person-0 [id="41924"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1368161.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="41924"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="41924"] .image-decor::after {
+  content: "";
+}
+    /* Юкино Юкиношита */
+  .Person-0 [id="67067"] .image-cutter::after { 
+  background: url('//nyaa.shikimori.one/system/user_images/original/601058/1368165.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="67067"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="67067"] .image-decor::after {
+  content: "";
+}
+    /* Комачи Хикигая */
+  .Person-0 [id="67075"] .image-cutter::after { 
+  background: url('//nyaa.shikimori.one/system/user_images/original/601058/1368170.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="67075"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="67075"] .image-decor::after {
+  content: "";
+}
+    /* Юи Юигахама */
+  .Person-0 [id="67069"] .image-cutter::after { 
+  background: url('//moe.shikimori.one/system/user_images/original/601058/1368177.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="67069"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="67069"] .image-decor::after {
+  content: "";
+}
+    /* Цугуми(корона грешника) */
+  .Person-0 [id="43282"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1368181.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="43282"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="43282"] .image-decor::after {
+  content: "";
+}
+    /* Маширо Шина */
+  .Person-0 [id="61371"] .image-cutter::after { 
+  background: url('//desu.shikimori.one/system/user_images/original/601058/1368188.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="61371"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="61371"] .image-decor::after {
+  content: "";
+}
+    /* Йошино Кавай */
+  .Person-0 [id="99233"] .image-cutter::after { 
+  background: url('//desu.shikimori.one/system/user_images/original/601058/1368203.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="99233"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="99233"] .image-decor::after {
+  content: "";
+}
+    /* Изуми Рейна */
+  .Person-0 [id="132430"] .image-cutter::after { 
+  background: url('//nyaa.shikimori.one/system/user_images/original/601058/1368225.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="132430"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="132430"] .image-decor::after {
+  content: "";
+}
+    /* Ай Хинацуру */
+  .Person-0 [id="144048"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1368236.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="144048"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="144048"] .image-decor::after {
+  content: "";
+}
+    /* Джульетта Персия */
+  .Person-0 [id="131194"] .image-cutter::after { 
+  background: url('//moe.shikimori.one/system/user_images/original/601058/1368247.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="131194"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="131194"] .image-decor::after {
+  content: "";
+}
+    /* Виньетта Эйприл */
+  .Person-0 [id="143075"] .image-cutter::after { 
+  background: url('//moe.shikimori.one/system/user_images/original/601058/1368252.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="143075"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="143075"] .image-decor::after {
+  content: "";
+}
+    /* Мэгуми Тадокоро */
+  .Person-0 [id="76026"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1368271.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="76026"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="76026"] .image-decor::after {
+  content: "";
+}
+    /* Энтома Василисса Дзета */
+  .Person-0 [id="132067"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1368291.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="132067"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="132067"] .image-decor::after {
+  content: "";
+}
+    /* Ай Шиндо */
+  .Person-0 [id="91479"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1368296.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="91479"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="91479"] .image-decor::after {
+  content: "";
+}
+    /* Латина */
+  .Person-0 [id="144250"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1368301.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="144250"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="144250"] .image-decor::after {
+  content: "";
+}
+    /* Кобато Хасэгава */
+  .Person-0 [id="37698"] .image-cutter::after { 
+  background: url('//moe.shikimori.one/system/user_images/original/601058/1368307.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="37698"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="37698"] .image-decor::after {
+  content: "";
+}
+    /* Юкимура Кусуноки */
+  .Person-0 [id="38941"] .image-cutter::after { 
+  background: url('//desu.shikimori.one/system/user_images/original/601058/1368318.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="38941"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="38941"] .image-decor::after {
+  content: "";
+}
+    /* Чиса Котэгава */
+  .Person-0 [id="145329"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1379366.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="145329"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="145329"] .image-decor::after {
+  content: "";
+}
+    /* Санка Рэа */
+  .Person-0 [id="32884"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1379526.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="32884"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="32884"] .image-decor::after {
+  content: "";
+}
+    /* Урара Шираиши */
+  .Person-0 [id="57491"] .image-cutter::after { 
+  background: url('//moe.shikimori.one/system/user_images/original/601058/1379532.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="57491"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="57491"] .image-decor::after {
+  content: "";
+}
+    /* Хаски Комаи */
+  .Person-0 [id="163080"] .image-cutter::after { 
+  background: url('//dere.shikimori.one/system/user_images/original/601058/1379539.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="163080"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="163080"] .image-decor::after {
+  content: "";
+}
+    /* Нао Томори */
+  .Person-0 [id="122211"] .image-cutter::after { 
+  background: url('//nyaa.shikimori.one/system/user_images/original/601058/1379570.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="122211"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="122211"] .image-decor::after {
+  content: "";
+}
+    /* Шизуку Китаяма */
+  .Person-0 [id="72567"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1379586.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="72567"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="72567"] .image-decor::after {
+  content: "";
+}
+    /* Маюми Саэгуса */
+  .Person-0 [id="55745"] .image-cutter::after { 
+  background: url('//nyaa.shikimori.one/system/user_images/original/601058/1379605.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="55745"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="55745"] .image-decor::after {
+  content: "";
+}
+    /* Миюки Шиба */
+  .Person-0 [id="55741"] .image-cutter::after { 
+  background: url('//moe.shikimori.one/system/user_images/original/601058/1379607.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="55741"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="55741"] .image-decor::after {
+  content: "";
+}
+    /* Анджелина Кудо Шилдс */
+  .Person-0 [id="107331"] .image-cutter::after { 
+  background: url('//nyaa.shikimori.one/system/user_images/original/601058/1380255.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="107331"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="107331"] .image-decor::after {
+  content: "";
+}
+    /* Нана Хираги */
+  .Person-0 [id="163085"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1379666.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="163085"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="163085"] .image-decor::after {
+  content: "Дурочка ";
+} 
+    /* Сикстина Фибель */
+  .Person-0 [id="145739"] .image-cutter::after { 
+  background: url('//nyaa.shikimori.one/system/user_images/original/601058/1380295.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="145739"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="145739"] .image-decor::after {
+  content: "";
+}
+    /* Шиноа Хираги */
+  .Person-0 [id="83017"] .image-cutter::after { 
+  background: url('//moe.shikimori.one/system/user_images/original/601058/1380297.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="83017"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="83017"] .image-decor::after {
+  content: "";
+}
+    /* Шиноа Хираги */
+  .Person-0 [id="121139"] .image-cutter::after { 
+  background: url('//desu.shikimori.one/system/user_images/original/601058/1380298.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="121139"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="121139"] .image-decor::after {
+  content: "";
+}
+    /* Мимоза Вермиллион */
+  .Person-0 [id="150704"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1408986.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="150704"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="150704"] .image-decor::after {
+  content: "";
+}
+    /* Тио Кларс */
+  .Person-0 [id="128166"] .image-cutter::after { 
+  background: url('//moe.shikimori.one/system/user_images/original/601058/1409037.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="128166"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="128166"] .image-decor::after {
+  content: "";
+}
+    /* Рафталия */
+  .Person-0 [id="112893"] .image-cutter::after { 
+  background: url('//dere.shikimori.one/system/user_images/original/601058/1409444.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="112893"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="112893"] .image-decor::after {
+  content: "";
+}
+    /* Элейна */
+  .Person-0 [id="151335"] .image-cutter::after { 
+  background: url('//nyaa.shikimori.one/system/user_images/original/601058/1331285.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="151335"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="151335"] .image-decor::after {
+  content: "";
+}
+    /* Рокси Мигурдия */
+  .Person-0 [id="111341"] .image-cutter::after { 
+  background: url('//kawai.shikimori.one/system/user_images/original/601058/1439736.jpg') ;
+  background-size: cover;
+  background-position: top center;
+}
+  #profiles_show .Person-0 [id="111341"] .image-cutter::before {
+  content: "";
+}
+  #profiles_show .Person-0 [id="111341"] .image-decor::after {
+  content: "";
+}
+  
