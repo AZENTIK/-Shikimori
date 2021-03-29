@@ -61,7 +61,6 @@ body:after {
 
 [data-tab-switch] {
     font-weight: bold; 
-    position: relative;
     justify-content: center;
     margin: 4px 4px;
     padding: 6px 10px 5px;
