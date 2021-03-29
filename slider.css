@@ -1,9 +1,10 @@
 .id-01 {
     display: inline-block;
     position: relative;
-    width: calc(100% / 10 - 1 * 1%);
+    width: calc(100% / 2);
+    height: 450px;
     margin: 0.5rem 0.5%;
-    max-width: 1000px;
+    max-width: 350px;
     border-radius: 0.45rem;
     overflow: hidden;
     border: none;
